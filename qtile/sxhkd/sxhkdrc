@@ -40,7 +40,7 @@ super + F8
 
 #Evolution
 super + F9
-    wavebox
+    /opt/wavebox.io/wavebox/wavebox-launcher
 
 #Spotify
 super + F10
@@ -96,7 +96,7 @@ super + v
 
 #Pragha
 super + m
-    pragha
+    deadbeef
 
 #kitty
 super + Return

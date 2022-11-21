@@ -35,7 +35,7 @@ feh --bg-scale ~/Github/System-Configs/Common/wallpaper/5120x1440/japan-night-st
 ##wallpaper for other Arch based systems
 #feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
 #start the conky to learn the shortcuts
-(conky -c $HOME/.config/qtile/scripts/system-overview) &
+#(conky -c $HOME/.config/qtile/scripts/system-overview) &
 
 #start sxhkd to replace Qtile native key-bindings
 run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
@@ -51,10 +51,14 @@ blueberry-tray &
 picom --config $HOME/.config/qtile/scripts/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #/usr/lib/xfce4/notifyd/xfce4-notifyd &
+run dunst &
+run xiccd &
 
 #starting user applications at boot time
 run volumeicon &
-#run discord &
+run tailscale-systray &
+run discord &
+run flameshot &
 #nitrogen --restore &
 #run caffeine -a &
 #run vivaldi-stable &
@@ -65,5 +69,6 @@ run insync start &
 run nextcloud --background &
 #run spotify &
 #run atom &
-#run telegram-desktop &
+run telegram-desktop &
+run /opt/wavebox.io/wavebox/wavebox-launcher
 systemctl --user restart xidlehook.service
